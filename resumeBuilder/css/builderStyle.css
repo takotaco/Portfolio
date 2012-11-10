@@ -1,0 +1,168 @@
+h1 {
+    font-size: 20px;
+    padding: 5px;
+    padding-bottom:20px;
+}
+
+h2 {
+    font-size: 16px;
+    padding: 5px;
+    padding-top: 25px;
+}
+
+p {
+    font-size: 14px;
+    padding:5px;
+}
+
+label {
+    padding:5px;    
+}
+
+input {
+    position: relative;
+    left:50%;
+    margin-left: -175px;
+    font-size:23px;
+    width:350px;
+    display:block;
+    border: 1px solid #999;
+    height: 23px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.blur {
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#form {
+    display: none; /* hide it at first */
+	background-color: #f1f1f1;
+
+    /* text */
+    text-align: center;
+
+    /* positioning */
+       z-index: 256;  /* place on top of everything */
+    position: fixed;
+    top:50%;
+    left:50%;
+    width:500px;
+    height:400px;
+    margin: 0 auto;
+    margin-top: -200px;
+    margin-left: -250px;
+
+    /* border, padding */
+    padding: 10px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border-radius: 5px;
+    -moz-border-radius:5px;
+    border-color:black;
+    border-width:1px;
+    border-style: solid;
+}
+
+#sig {
+    border:1px black solid;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    margin:10px;
+}
+
+.button {
+    position: absolute;
+    cursor: pointer;
+    background-color: black;
+    color:white;
+    font-size: 16px;
+    font-style: bold;
+    padding:5px;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    text-align: center;
+    width:4em;
+}
+
+.step {
+    display:none;
+    padding:10px;
+}
+
+.delButton {
+    font-size:9px;
+    top:2px;
+    right:2px;
+    width:1em;
+}
+
+#addEdu, #addExpr, #addProj, #addSkill {
+    font-size: 9px;
+    top:32px;
+    right:17px;
+    width:1em;  
+}
+
+/*#addSkill {
+    position: relative;
+    font-size: 9px;
+    top:-27px;
+    right:-277px;
+    width:1em;  
+}*/
+
+#addSchool, #addProject, #addJob, #addSkillList, #fbLogin, #fbLogout {
+    margin-top:20px;
+    left:50%;
+    margin-left:-10em;
+    width:20em;
+}
+
+#clearCanvas {
+    left:50%;
+    margin-left:-2em;
+}
+
+#preview {
+    bottom:5px;
+    left:50%;
+    margin-left: -3em;
+    width:6em;
+}
+
+#next {
+    bottom: 5px;
+    right: 5px;
+}
+
+#back {
+    bottom: 5px;
+    left:5px;
+} 
+
+#edit {
+    z-index: 10;
+    top:5px;
+    right:5px;
+    width:2em;
+    display:none;
+}
+
+#dimmer {
+    display:none;
+    z-index:255;
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#resumeHTML {
+    resize: none;
+}
