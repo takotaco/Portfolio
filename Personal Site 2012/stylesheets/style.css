@@ -1,0 +1,143 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+	background-image: url('../resources/bgtile.png');
+	background-repeat: repeat;
+	font-family: helvetica, arial, sans-serif;	
+}
+
+#screen {
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-color: rgba(255, 255, 255, .65);
+}
+
+#header {
+	float:right;
+	color:black;
+	font-variant: small-caps;
+	border-bottom-width:2px;
+	border-bottom-color:black;/*#9F83BC;*/
+	border-bottom-style:solid;
+	width:100%;
+}
+
+#projects {
+	border-bottom-width:1px;
+	border-bottom-color:#FF6700;
+	border-bottom-style:solid;
+}
+
+#container {
+	position:absolute;
+	left:25%;
+	top:15%;
+	width:50%;
+	height:70%;
+	background-color: rgba(255, 255, 255, .95);
+	padding:25px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+}
+
+#content {
+	/*width:40%;*/
+	float:right;
+	/*padding-top:10px;*/
+	/*padding-left:50px;
+	padding-right:50px;*/
+	font-size:11px;
+	text-align: right;
+	max-width: 300px;
+}
+
+#menu {
+	float:left;
+	padding-top:15px;
+}
+
+.clear {
+	clear:both;
+}
+
+.info {
+	padding-top:25px;
+}
+
+img {
+	position:relative;
+	bottom:0px;
+	right:0px;
+	margin-bottom:10px;
+	/*margin-right:15px;*/
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+}
+
+h1 {
+	padding:5px;
+	padding-top:0px;
+	font-size:33px;
+	float:right;
+}
+
+h2 {
+	padding:5px;
+	font-weight:600;
+	font-size:16px;
+}
+
+ul {
+	padding:0px;
+	padding-left:5px;
+	font-variant: small-caps;
+	font-size:10px;
+}
+
+li {
+	padding:3px;
+	margin:5px;
+}
+
+a, .menuLink {
+	text-decoration: none;
+	color: black;
+	border-bottom-width:1px;
+	border-bottom-color:#FF6700;
+	border-bottom-style:solid;
+}
+
+a:hover, .menuLink:hover, .infoLink {
+	color: #FF6700;
+	/*background-color: #FF6700;*/ /*rgba(255, 201, 63, 1);*/
+}
+
+.projLink {
+	text-decoration: none;
+	color:black;
+	border:none;
+}
+
+.infoLink {
+	float:right;
+	text-align:right;
+	position: relative;
+	color:black;
+	bottom:0px;
+	top:0px;
+	font-size:17px;
+	border-bottom-width:1px;
+	border-bottom-color:#FF6700;
+	border-bottom-style:solid;
+}
+.infoLink:hover {
+	color:#FF6700;
+}
+
+.projLink:hover {
+	color:white;
+	background-color: #FF6700; /*rgba(60, 167, 214, 1);*/
+}

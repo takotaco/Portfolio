@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- 
+Arthur Chang: arthurc
+Elizabeth Keller: eakeller
+-->
+<html>
+    <head>
+        <title>Resume Builder</title>
+
+        <!-- Style Sheets -->
+        <!-- Eric Meyer's CSS Reset -->
+        <link rel ="stylesheet" href="css/reset.css">
+
+        <!--webfonts-->
+        <link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>
+
+        <!-- Our Stylesheet -->
+        <link id="builderStyle" rel="stylesheet" type="text/css" href="css/builderStyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/resumeStyle.css" />
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <div id="form">
+
+            <!--welcome, step 0 -->
+            <div id="welcome" class="step">
+                <h1>Welcome to the resume maker!</h1>
+                <p>This site is designed to help you create a well-formated, searchable resume. You can connect through facebook to auto-fill parts of your resume using information from facebook, or fill in the details by hand. When you are done filling out the form you will recieve an HTML and CSS file that you can upload to your own website.</p>
+                <h2>Let's get started!</h2>
+                <h1>Connect with Facebook</h1>
+                <div id="fbLogin" class="button">Login to Facebook</div>
+                <div id="fbLogout" class="button">Logout of Facebook</div>
+            </div>
+
+            <!--name, step 1-->
+            <div id="nameInput" class="step">
+                <h1>Input your full name:</h1>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="John H Doe-Zimmerlaucher"/>
+                </form>
+            </div>
+
+            <!--contact info, step 2-->
+            <div id="contact" class="step">
+                <h1>Input your contact information:</h1>
+                <form>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" name="phoneNumber" id="phoneNum" placeholder="555-555-5555"/>
+                    <label for="emailAddr">Email Address</label>
+                    <input type="text" name="emailAddr" id="email" placeholder="jDZimmerlaugher@gmail.com"/>
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder='9 Pleasent Place, Tuscon, AZ 99924'/>
+                </form>
+            </div>
+
+            <!--education-->
+            <div id="education" class="step">
+                <h1>Enter information about your education:</h1>
+                <form>
+                    <label for="school">School</label>
+                    <input type="text" name="school" id="school" placeholder='Zombie University'/>
+                    <label for="degree">Degree</label>
+                    <input type="text" name="degree" id="degree" placeholder='Bachelor of Science in Astronomy'/>
+                    <label for="gpa">GPA</label>
+                    <input type="text" name="gpa" id="gpa" placeholder='3.99 / 4.0'/>
+                    <label for="gDate">Graduation Date</label>
+                    <input type="text" name="gDate" id="graduation" placeholder='1998'/>
+                </form>
+                <div id="addSchool" class="button">Submit and add another school</div>
+            </div>
+
+            <!--projects-->
+            <div id="projects" class="step">
+                <h1>Enter information about any projects you have worked on:</h1>
+                <form>
+                    <label for="title">Project title</label>
+                    <input type="text" name="title" id="projectTitle" placeholder='Squirrel Ressurection'/>
+                    <label for="details1">Project details</label>
+                    <input type="text" name="details1" id="details1" placeholder='Revived squirrels from the dead'/>
+                    <input type="text" name="details2" id="details2" placeholder='Formed a Zombie Squirrel Army'/>
+                    <input type="text" name="details3" id="details3" placeholder='Took over the world'/>
+                    <label for="link">Link to project</label>
+                    <input type="text" name="link" id="projectLink" placeholder='http://www.google.com'/>
+                </form>
+                <div id="addProject" class="button">Submit and add another project</div>
+            </div>
+
+            <!--experience-->
+            <div id="experience" class="step">
+                <h1>Enter information about past work experience:</h1>
+                <form>
+                    <label for="title">Job title</label>
+                    <input type="text" name="title" id="jobTitle" placeholder="Research Technician"/>
+                    <label for="employer">Employer</label>
+                    <input type="text" name="employer" id="employer" placeholder="Harco Labs"/>
+                    <label for="detail1">Work description</label>
+                    <input type="text" name="detail1" id="detail1" placeholder="Aided in the study of decomposing zombies"/>
+                    <input type="text" name="detail2" id="detail2" placeholder="Measured gas output and general stench levels"/>
+                    <input type="text" name="detail3" id="detail3" />
+                    <label for="dates">Dates of employment</label>
+                    <input type="text" name="dates" id="dates" placeholder="From 1800-05 to 4040-01"/>
+                </form>
+                <div id="addJob" class="button">Submit and add another experience</div>
+            </div>
+
+            <!--skills-->
+            <div id="skills" class="step">
+                <h1>Enter information about your marketable skills:</h1>
+                <form>
+                    <label for="type">Skill Type</label>
+                    <input type="text" name="skillType" id="skillType" placeholder="Disection"/>
+                    <label for="skillList">Skill List</label>
+                    <input type="text" name="skillList" id="skillList" placeholder="tiny hands, dexterous"/>
+                </form>
+                <div id="addSkillList" class="button">Submit and add another type of skill</div>
+            </div>
+
+            <!--signature step -->
+            <div id="signature" class="step">
+                <h1>Add your signature</h1>
+                <p>Click and drag in the box below to sign your signature:<p>
+                <br />
+                <canvas id="sig" height="100px" width="300px"></canvas>
+                <div id="clearCanvas" class="button">Clear</div>
+            </div>
+
+            <!--last step -->
+            <div id="done" class="step">
+                <h1>Done!</h1>
+                <p>Copy and paste the code below into a text file and save it to your desktop as "resume.html"</p>
+                <p>Now you can upload "resume.html" to your personal site and show your new resume to the world!</p>
+                <p>Also download the "reset.css" and "resumeStyle.css" files and put them in a folder named "css" with your "resume.html"</p>
+                <textarea id="resumeHTML" rows="6" cols="50" readonly></textarea>
+                <a href="css/reset.css" id="cssReset">css/reset.css (Right Click > Save As)</a>
+                <a href="css/resumeStyle.css" id="resumeCss">css/resumeStyle.css (Right Click > Save As)</a>
+            </div>
+
+            <!--form navigation buttons-->
+            <div id="back" class="button">Back</div>
+            <div id="preview" class="button">Preview</div>
+            <div id="next" class="button">Next</div>
+        </div>
+        <div id="resume" class="container">
+            <div id="header"></div>
+            <div id="resumeBody">
+                <div id="col1" class="col"></div>
+                <div id="col2" class="col"></div>
+                <div id="col3" class="col"></div>
+            </div>
+            <div id="footer"></div>
+            <div id="edit" class="button">Edit</div>
+        </div>
+        <div id="dimmer"></div>
+        <!-- Java Script -->
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

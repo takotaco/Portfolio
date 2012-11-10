@@ -1,0 +1,159 @@
+html {
+    background: url(../images/linen_texture_dark.png);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    padding: 10px;
+    font-family: 'Numans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+	font-weight: 600;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+	color: black;
+	font-style: italic;
+}
+
+h5 {
+	font-size: 20px;
+	font-weight: 700;
+	padding:5px;
+	border-bottom: 1px solid black;
+}
+
+h4 {
+	font-size: 17px;
+	padding:3px;
+	font-weight: 600;
+}
+
+h3 {
+	font-size:16px;
+	padding:1px;
+	padding-left:1em;
+}
+
+#resume {
+    position:fixed;
+    top:1%;
+    left:10%;
+    background-color: #f1f1f1;
+    width:80%;
+    height:98%;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+#header {
+	text-align: left;
+}
+
+#resumeBody {
+	position: absolute;
+	width:100%;
+	clear:both;
+	padding-top:50px;
+	float:left;
+}
+
+.col {
+	position:relative;
+	width:33%;
+	height:100%;
+	text-align: left;
+}
+
+#col1 {
+	position: absolute;
+	left:0%;
+}
+
+#col2 {
+	position: absolute;
+	left:33%;
+}
+
+#col3 {
+	position: absolute;
+	left:66%;
+}
+
+#footer {
+	clear:both;
+	float:left;
+    bottom: 100%;
+    position: absolute;
+    top: 60%;
+    width:100%;
+    min-height: 113px;
+}
+
+#skillTitle {
+	float:left;
+	width:100%;
+}
+
+#sigImg {
+    position: absolute;
+    z-index:1;
+	bottom:5px;
+	right:5px;
+	padding:5px;
+}
+
+#fullName {
+	font-size: 30px;
+	position: relative;
+	left:0px;
+	top:0px;
+	width:99%;
+	padding-left:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-bottom: 2px black solid;
+}
+
+#cInfo {
+	position: relative;
+	float:left;
+}
+
+.cItem {
+	float: left;
+	font-size: 15px;
+	padding:10px;
+	padding-top:5px;
+}
+
+#edu, #proj, #expr, #skillTitle  {
+	padding:15px;
+	padding-top:25px;
+}
+
+.school, .project, .job, .skill {
+	clear:both;
+	padding:5px;
+	padding-bottom:15px;
+	position:relative;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.75); 
+}
