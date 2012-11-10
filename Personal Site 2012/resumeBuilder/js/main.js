@@ -192,8 +192,8 @@ window.onload = function(){
     /* FACEBOOK SDK/API EXAMPLE CODE - with our code inside */
     window.fbAsyncInit = function() {
         FB.init({
-          appId      : '390646274340088', // App ID
-          channelUrl : '//localhost:8080/channel.html', // Channel File
+          appId      : '264409853680494', // App ID
+          channelUrl : 'http://www.contrib.andrew.cmu.edu/~eakeller/resumeBuilder/channel.html', // Channel File
           status     : true, // check login status
           cookie     : true, // enable cookies to allow the server to access the session
           xfbml      : true  // parse XFBML
